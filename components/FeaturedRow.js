@@ -10,7 +10,7 @@ const FeaturedRow = ({ image1, image2, image3, image4, title, description, featu
         <View className="pb-4">
             <View className="flex-row items-center justify-between px-4">
                 <Text className="font-bold text-lg">{title}</Text>
-                <ArrowRightIcon color={"#00CCBB"} />
+                <ArrowRightIcon color={"#FF5E97"} />
             </View>
             <Text className="text-xs text-gray-500 px-4">{description}</Text>
             <ScrollView

@@ -21,38 +21,38 @@ const HomeScreen = () => {
     });
 
     return (
-        <SafeAreaView className="bg-white py-5 flex-col">
+        <View className="bg-white flex-col">
             {/* Header */}
-            <View className="flex-row pb-3 items-center mx-4 space-x-2">
+            <View className="bg-hello flex-row pt-12 pb-3 items-center px-4 space-x-2">
                 <Image
                     source={{
                         uri: "https://links.papareact.com/wru",
                     }}
-                    className="h-7 w-7 bg-gray-300 p-4 rounded-full"
+                    className="h-7 w-7 p-4 rounded-full"
                 />
                 <View className="flex-1 justify-center">
-                    <Text className="font-bold text-gray-400 text-xs">
+                    <Text className="font-bold text-gray-200 text-xs">
                         Deliver Now! ☺️
                     </Text>
                     <Text className="font-bold text-xl">
                         Current Location
-                        <ChevronDownIcon size={15} color={"#00CCBB"} />
+                        <ChevronDownIcon size={15} color={"#FFFFFF"} />
                     </Text>
                 </View>
-                <UserIcon size={30} color={"#00CCBB"} />
+                <UserIcon size={30} color={"#FFFFFF"} />
             </View>
             {/* Search */}
-            <View className="flex-row items-center space-x-2 pb-2 mx-4">
-                <View className="flex-row flex-1 space-x-2 bg-gray-200 p-2 rounded-full ">
-                    <MagnifyingGlassIcon size={25} color={"#00CCBB"} />
+            <View className="bg-hello flex-row items-center space-x-2 pb-2 px-4">
+                <View className="flex-row flex-1 space-x-2 bg-gray-100 p-2 rounded-full ">
+                    <MagnifyingGlassIcon size={25} color={"#FF5E97"} />
                     <TextInput placeholder="Restaurants and cuisines" keyboardType='default' />
                 </View>
-                <AdjustmentsVerticalIcon size={26} color={"#00CCBB"} />
+                <AdjustmentsVerticalIcon size={26} color={"#FFFFFF"} />
             </View>
             {/* body */}
-            <ScrollView className="bg-gray-200 h-[calc(100vh-17vh)]">
+            <ScrollView className="bg-gray-200 h-[calc(100vh-13.5vh)]">
                 {/* category */}
-                <Categories />
+                <Categories /> 
                 {/* featured rows */}
                 <FeaturedRow
                     id="123"
@@ -90,7 +90,7 @@ const HomeScreen = () => {
                 </View>
             </ScrollView>
 
-        </SafeAreaView>
+        </View>
     );
 };
 

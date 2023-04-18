@@ -40,7 +40,7 @@ const RestaurantScreen = () => {
                 <TouchableOpacity
                     onPress={navigation.goBack}
                     className="absolute top-14 left-5 bg-gray-100 p-3 rounded-full shadow-lg">
-                    <ArrowLeftIcon size={20} color="#00CCBB" />
+                    <ArrowLeftIcon size={20} color="#FF5E97" />
                 </TouchableOpacity>
             </View>
             <View className="bg-white">
@@ -48,9 +48,9 @@ const RestaurantScreen = () => {
                     <Text className="text-3xl font-bold">{title}</Text>
                     <View className="flex-row space-x-2 my-1">
                         <View className="flex-row items-center space-x-1">
-                            <StarIcon color={"green"} opacity={0.5} size={18} />
+                            <StarIcon color={"#FF5E97"} opacity={0.5} size={18} />
                             <Text className="text-xs text-gray-500">
-                                <Text className="text-green-500">{rating}</Text> . {genre}
+                                <Text className="text-pink">{rating}</Text> . {genre}
                             </Text>
                         </View>
                         <View className="flex-row items-center space-x-1">
@@ -59,12 +59,12 @@ const RestaurantScreen = () => {
                         </View>
                     </View>
                 </View>
-                <TouchableOpacity className="flex-row items-center space-x-2 p-4 border-y border-gray-300">
+                <TouchableOpacity className="flex-row items-center space-x-2 p-4 border-y border-gray-200">
                     <QuestionMarkCircleIcon color={"gray"} opacity={0.6} size={20} />
                     <Text className="pl-2 flex-1 text-md font-bold">
                         Have a food allergy?
                     </Text>
-                    <ChevronRightIcon color={"#00CCBB"} opacity={0.6} size={20}/>
+                    <ChevronRightIcon color={"#FF5E97"} opacity={0.6} size={20}/>
                 </TouchableOpacity>
             </View>
         </ScrollView>
